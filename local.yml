@@ -7,7 +7,7 @@
   - name: Install tmux
     apt: name=tmux
   - name: Install bincat
-    apt: name=bincat
+    apt: name=wcstools
   - name: Install neovim
     get_url:
         url: https://github.com/neovim/neovim/releases/latest/download/nvim.appimage

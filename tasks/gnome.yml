@@ -1,0 +1,7 @@
+- name: Install python-psutil package
+  apt: name=python3-psutil
+- name: Copy wallpaper
+  copy: src=files/wallpaper.jpg dest=/home/kali/.wallpaper.jpg owner=kali group=kali mode=600
+- name: Set GNOME Wallpaper
+  become_user: kali
+  dconf: key="/org/gnome/desktop/background/picture-uri" value="'file:///home/kali/.wallpaper.jpg'"

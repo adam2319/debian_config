@@ -6,6 +6,8 @@
     changed_when: False
   - name: Install tmux
     apt: name=tmux
+  - name: Install bincat
+    apt: name=bincat
   - name: Install neovim
     get_url:
         url: https://github.com/neovim/neovim/releases/latest/download/nvim.appimage

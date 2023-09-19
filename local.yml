@@ -6,6 +6,8 @@
     changed_when: False
   - name: Install tmux
     apt: name=tmux
+  - name: Install hashing
+    apt: name=libgcrypt20-dev
   - name: Install bincat
     apt: name=wcstools
   - name: Install neovim
